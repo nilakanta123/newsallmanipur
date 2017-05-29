@@ -25,7 +25,7 @@ SECRET_KEY = '(n7)-yv8#3wlnxb(3d%0p0n*)lm=2up@r_k-m1rm0en*u+1=l$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['newsallmanipur.herokuapp.com']
 
 
 # Application definition
