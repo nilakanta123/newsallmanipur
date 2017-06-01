@@ -53,8 +53,24 @@
       </div>
     </nav>
 
-    {% block content %}
-    {% endblock content %}
+    <div class="container">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Hello, User</h1>
+          <p>We collect all the news articles published in manipur on daily basis. And we provide to you a list of articles recommended just for you. And we hope it suits your personal favours.</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+      </div>
+
+      {% block content %}
+      
+      {% endblock content %}
+      <hr>
+          <footer>
+              <p>&copy; 2016 Company, Inc.</p>
+        </footer>
+    </div> <!-- /container -->
     
 
 
