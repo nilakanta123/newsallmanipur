@@ -7,7 +7,7 @@ from django.views.generic import View, ListView, DetailView
 class HomeView(ListView):
 	template_name = "index.html"
 	context_object_name = "articles"
-	paginate_by = 6
+	# paginate_by = 6
 	
 	def get_context_data(self, **kwargs):
 		context = super(HomeView, self).get_context_data(**kwargs)
