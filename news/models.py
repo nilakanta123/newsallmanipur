@@ -5,7 +5,7 @@ class Feed(models.Model):
     f_url = models.URLField()
     f_region = models.CharField(max_length=200)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.f_name
 
 class Article(models.Model):
@@ -16,6 +16,6 @@ class Article(models.Model):
     a_pub_date = models.DateTimeField()
     a_cluster = models.BooleanField(default=False)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.a_title
 
