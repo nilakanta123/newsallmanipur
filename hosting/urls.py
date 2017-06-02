@@ -16,9 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from news.views import HomeView
+from news.views import HomeView, cron
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', HomeView.as_view(), name='home'),
+    url(r'^cron/$', cron, name='cron'),
+
 ]

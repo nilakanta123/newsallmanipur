@@ -4,7 +4,6 @@ class Feed(models.Model):
     f_name = models.CharField(max_length=200)
     f_url = models.URLField()
     f_region = models.CharField(max_length=200)
-    f_notes = models.TextField()
 
     def __unicode__(self):
         return self.f_name
