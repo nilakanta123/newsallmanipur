@@ -2,11 +2,20 @@ import feedparser
 import datetime
 from .models import Article, Feed
 from django.shortcuts import render
-from django.views.generic import View 
+from django.views.generic import View, ListView, DetailView
 
-class HomeView(View):
-	def get(self, request, *args, **kwargs):
-		return render(request, "index.html", {'range': range(3)})
+class HomeView(ListView):
+	template_name = "index.html"
+	context_object_name = "articles"
+	paginate_by = 6
+	
+	def get_context_data(self, **kwargs):
+		context = super(HomeView, self).get_context_data(**kwargs)
+		context['heading'] = "News Articles in our database"
+		return context
+
+	def get_queryset(self):
+		return Article.objects.all().order_by('-a_pub_date')
 
 def cron(request):
     feed_list = Feed.objects.all()
