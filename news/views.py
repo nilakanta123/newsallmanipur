@@ -42,6 +42,10 @@ def cron(request):
     return render(request, 'cron.html')
 
 
+def test_page(request):
+    return render(request, 'test.html')
+
+
 
 
 
