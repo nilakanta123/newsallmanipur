@@ -30,3 +30,22 @@ body {
 .item span {
     font-style: normal;
 }
+.inews {
+	padding-right: 5px;
+   	padding-left: 5px;
+   	overflow:hidden;
+   	max-height: 300px;
+   	min-height:300px !important;
+}
+.heading{
+	max-height: 100px;
+	min-height: 100px !important;
+}
+.content{
+	max-height: 200px;
+	min-height: 200px !important;
+}
+#bb {
+    position: absolute;
+    bottom: 0;
+}
