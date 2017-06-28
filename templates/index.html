@@ -4,15 +4,15 @@
 
 	<div id="services" class="container-fluid">
 	 <h2>NEWS TODAY</h2><br>
-	 <div class="row slideanim" style="background-color: red;"> <!--slide in scroll -->
-	    <div class="col-md-8" style="background-color: green;">
+	 <div class="row "> <!--slide in scroll -->
+	    <div class="col-md-8">
 		    {% for article in articles %}
-		      	<div class="col-md-4 inews" style="background-color: orange;">
-		        	<div class="heading" style="background-color: white;" >
+		      	<div class="col-md-4 inews slideanim">
+		        	<div class="heading">
 		        		<h4>{{article.a_title}}</h4>
 		        	</div>
-		        	<div class="content" style="background-color: yellow;">
-			        	<p>{{article.a_description |truncatechars:150}}</p>
+		        	<div class="content">
+			        	<p>{{article.a_description |truncatechars:200}}</p>
 			        	<p><a id="bb" class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
 		        	</div>
 	      		</div>
