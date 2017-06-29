@@ -5,9 +5,10 @@
 	<div id="services" class="container-fluid">
 	 <h2>NEWS TODAY</h2><br>
 	 <div class="row "> <!--slide in scroll -->
-	    <div class="col-md-8">
+	    <div class="col-lg-8 col-md-12 col">
 		    {% for article in articles %}
-		      	<div class="col-md-4 inews slideanim" style="width: 32%; margin: 2px; border:1px solid #9e9e9e;">
+		      	<div class="col-lg-4 col-md-6 inews slideanim" style="border:1px solid #9e9e9e;">
+		      	<!-- style="width: 32%; margin: 2px; border:1px solid #9e9e9e;" -->
 		        	<div class="heading">
 		        		<h4>{{article.a_title|truncatewords:12}}</h4>
 		        	</div>
@@ -19,7 +20,7 @@
 	      		</div>
 		    {% endfor %}
 		</div>
-	  	<div class="col-md-4" style="background-color: blue;">
+	  	<div class="col-lg-4 col-md-12" style="background-color: blue;">
 		      <h2>Heading</h2>
 		      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
 	    </div>
