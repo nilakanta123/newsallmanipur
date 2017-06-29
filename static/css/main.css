@@ -2,6 +2,7 @@
 body {
   padding-top: 50px;
   padding-bottom: 20px;
+  background-color: #565656
 }
 
 /* styling Carousel */
@@ -34,17 +35,19 @@ body {
 	padding-right: 5px;
    	padding-left: 5px;
    	overflow:hidden;
-   	margin-bottom: 5px;
    	max-height: 300px;
    	min-height:300px !important;
 }
+.inews h4, p{
+    color: #f0f0f0;
+}
 .heading{
-	max-height: 100px;
-	min-height: 100px !important;
+	max-height: 60px;
+	min-height: 60px !important;
 }
 .content{
-	max-height: 200px;
-	min-height: 200px !important;
+	max-height: 240px;
+	min-height: 240px !important;
 }
 #bb {
     position: absolute;
