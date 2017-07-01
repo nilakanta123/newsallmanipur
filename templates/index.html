@@ -11,12 +11,16 @@
 		      	<!-- style="width: 32%; margin: 2px; border:1px solid #9e9e9e;" -->
 		        	<div class="heading">
 		        		<h4>{{article.a_title|truncatewords:12}}</h4>
+		        			<hr>
 		        	</div>
-		        	<hr>
 		        	<div class="content">
+
 			        	<p style="font-style: italic; color: #f0f0ff;">{{article.a_description |truncatechars:220}}</p>
-			        	<p><a id="bb" href="{{article.a_url}}">View details&raquo;</a></p>
 		        	</div>
+		        	<div class="tail">
+			        	<p style="float: left;"><a href="{{article.a_url}}">View details&raquo;</a></p>&nbsp;&nbsp;
+			        	<p style="float: right;">{{article.a_pub_date.date}}</p>
+			        </div>
 	      		</div>
 		    {% endfor %}
 		</div>
